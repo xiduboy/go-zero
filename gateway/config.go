@@ -35,5 +35,7 @@ type (
 		// Mappings is the mapping between gateway routes and Upstream rpc methods.
 		// Keep it blank if annotations are added in rpc methods.
 		Mappings []RouteMapping `json:",optional"`
+		// open pinpoint to trace
+		Pinpoint bool `json:",optional"`
 	}
 )
